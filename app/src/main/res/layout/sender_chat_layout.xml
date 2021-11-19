@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="55dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/sender_chat_drawable"
+        android:id="@+id/layoutForMessage">
+
+        <TextView
+            android:id="@+id/SenderMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender Message displays here"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="45dp"
+            android:paddingVertical="2.5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Time"
+            android:textSize="10sp"
+            android:text="00:00"
+            android:layout_toEndOf="@id/SenderMessage"
+            android:layout_alignBottom="@id/SenderMessage"
+            android:layout_marginStart="-40dp"
+            android:textColor="@color/main_text_color"/>
+    </RelativeLayout>
+</RelativeLayout>

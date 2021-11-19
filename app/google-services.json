@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "820685001861",
+    "project_id": "sandes-a-chat-application",
+    "storage_bucket": "sandes-a-chat-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820685001861:android:7c3b9d6e7920099c4c05ec",
+        "android_client_info": {
+          "package_name": "com.example.sandesChatApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820685001861-hto7g0vpub74tkmcsqqv6ap947dqnse8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sandesChatApp",
+            "certificate_hash": "c7c78ffe1ae0edba609eea61ca37dca6ac709358"
+          }
+        },
+        {
+          "client_id": "820685001861-sfba2rlbsoo3k3u5nupin8cefbq345e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkLEe3In9jbnyQ71LOgkiayta3u4MPXn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820685001861-sfba2rlbsoo3k3u5nupin8cefbq345e9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setProfile"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/saveProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_your_profile"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/cormorant_garamond_semibold"
+        android:textColor="@color/splash_screen_blue"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/getUserImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/saveProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="100dp">
+        <ImageView
+            android:id="@+id/getUserImageInImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF3D53DD"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_person_24"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/enterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_corner_box"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:hint="@string/enter_your_username"
+        android:layout_below="@id/getUserImage"
+        android:layout_marginTop="40dp"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"/>
+
+    <android.widget.Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_blue"
+        android:layout_centerHorizontal="true"
+        android:text="@string/create"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/enterUsername"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarUserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/create"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

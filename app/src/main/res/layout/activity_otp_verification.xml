@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otpVerification"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_baseline_vpn_key_24"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textHeading"
+        android:text="@string/enter_otp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cormorant_garamond_semibold"
+        android:layout_below="@+id/logo"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/getOTP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:background="@drawable/round_corner_box"
+        android:layout_below="@+id/textHeading"
+        android:layout_marginTop="60dp"
+        android:textSize="15sp"
+        android:hint="@string/enter_otp_here"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeNumber"
+        android:textAlignment="center"
+        android:layout_below="@+id/getOTP"
+        android:layout_centerHorizontal="true"
+        android:text="@string/otp_not_received"
+        android:textColor="@color/splash_screen_blue"
+        android:layout_marginTop="15dp"/>
+
+    <android.widget.Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_blue"
+        android:layout_centerHorizontal="true"
+        android:text="@string/verify"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/changeNumber"
+        android:layout_marginTop="40dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarOtpAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/verify"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
